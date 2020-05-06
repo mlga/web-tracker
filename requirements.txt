@@ -1,0 +1,12 @@
+environ-config==20.1.0
+faust==1.10.4
+geopy==1.21.0
+schematics==2.1.0
+
+# dev dependencies
+pylint==2.5.2
+pytest==5.4.1
+pytest-asyncio==0.12.0
+pytest-cov==2.8.1
+pytest-html==2.1.1
+requests==2.23.0
