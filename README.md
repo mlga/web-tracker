@@ -13,7 +13,7 @@ Project was developed using:
  * docker-compose `1.25.2`
 
 ## API  
-Web service is available under http://localhost:8900.  
+Web service is available under http://localhost:5000.  
   
 ### `/route/`
 | Method | `POST` |  
