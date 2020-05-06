@@ -3,7 +3,7 @@ import time
 import requests
 
 
-SERVICE_ENDPOINT = 'http://localhost:5000/'
+SERVICE_ENDPOINT = 'http://tracker:5000/'
 ROUTE_ENDPOINT = "{}route/".format(SERVICE_ENDPOINT)
 ROUTE_ADD_WAY_POINT_ENDPOINT = "{}{}/way_point/".format(ROUTE_ENDPOINT, "{}")
 ROUTE_LENGTH_ENDPOINT = '{}{}/length/'.format(ROUTE_ENDPOINT, "{}")
