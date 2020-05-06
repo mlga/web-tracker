@@ -1,6 +1,6 @@
 
 # Karfka Tracker  
-Dead simple web application which allows to track way points of routes using  
+Dead simple web application which allows to track way points of routes using 
 latitude and longitude coordinates.  
   
 ## Run  
@@ -8,8 +8,10 @@ Just execute:
 ```bash  
 docker-compose up  
 ```  
-Kafka needs some time to start.  
-  
+Project was developed using:
+ * Docker `19.03.5`
+ * docker-compose `1.25.2`
+
 ## API  
 Web service is available under http://localhost:8900.  
   
@@ -56,3 +58,15 @@ This is easy to fix by introducing `tracking ID` - a JWT with a following payloa
    request without any lookups.
 1. In _real life_, picking longest route for given day would be a periodic task
 or at least separate worker. Here, it is done live to be more interactive and fun.
+
+
+## Test
+Unit tests:
+```bash
+docker-compose run --rm app py.test tests/unit/
+```
+
+All the tests (tracker must be running):
+```bash
+docker-compose run --rm app py.test
+```

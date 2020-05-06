@@ -10,13 +10,13 @@ services:
     depends_on:
       - broker
     ports:
-      - '5000:6066'
+      - '5000:5000'
     environment:
       KAFKA_BROKER: 'broker:29092'
     command: >
       bash -c "
       python ./bin/wait-for-broker.py
-      && python ./bin/run.py worker -l info"
+      && python ./bin/run.py worker -l info --web-port=5000"
 
   zookeeper:
     image: confluentinc/cp-zookeeper:5.5.0
